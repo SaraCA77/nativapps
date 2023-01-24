@@ -1,0 +1,38 @@
+{
+  "name": "nativapps",
+  "version": "1.0.0",
+  "description": "Prueba técnica para la vacante de desarrollador backend",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "nodemon ./index.js",
+    "db": "docker-compose up --build -d",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaraCA77/nativapps.git"
+  },
+  "author": "Sara Camacho A",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaraCA77/nativapps/issues"
+  },
+  "homepage": "https://github.com/SaraCA77/nativapps#readme",
+  "dependencies": {
+    "cloud-config-client": "^1.6.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-validator": "^6.14.3",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "request": "^2.88.2",
+    "sequelize": "^6.28.0",
+    "sequelize-cli": "^6.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

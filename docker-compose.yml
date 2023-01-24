@@ -1,0 +1,13 @@
+version: '1'
+services:
+  postgres:
+    image: postgres
+    container_name: hospital
+    ports:
+      - '5432:5432'
+    volumes:
+      - '/var/lib/postgresql/data'
+    environment:
+      POSTGRES_DB: na_hospital
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: test
