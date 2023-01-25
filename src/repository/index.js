@@ -8,7 +8,7 @@ const db = {};
 let sequelize;
 
 const conexionDB = async () => {
-  sequelize = new Sequelize("na_hospital", "postgres", "test", {
+  sequelize = new Sequelize('na_hospital', "postgres", "test", {
     host: "localhost",
     port: 5432,
     dialect: "postgres",

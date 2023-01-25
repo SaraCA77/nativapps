@@ -1,13 +1,15 @@
-version: '1'
+version: '3.8'
 services:
   postgres:
     image: postgres
+    restart: always
     container_name: hospital
     ports:
       - '5432:5432'
     volumes:
-      - '/var/lib/postgresql/data'
+      - ./postgres_data:/var/lib/postgresql/data
     environment:
+      DATABASE_HOST: localhost
       POSTGRES_DB: na_hospital
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: test
