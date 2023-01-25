@@ -82,5 +82,6 @@ class PatientController {
       console.log(error);
     }
   }
+  
 }
 module.exports = PatientController
